@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>The Internet</h2>
+					<h4>a brief introduction</h4>
+					<img src="images/20200925-howInternetWorks/proxy-image.jpg"> 
+					<h6>We are the Brendan group</h6>
+				</section>
+				
+				<section>
+					<img src="images/20200925-howInternetWorks/internet-users.png">
+				</section>
+				<section>
+					<img src="images/20200925-howInternetWorks/Global+Internet+Overview+July+2019+DataReportal.png">
+				</section>
+				<section>
+					<p>
+						<h3>How does the internet works</h3>
+
+						<ul>
+							<li>HARDWARE</li> 
+							<li>PROTOCOLS</li>
+							<li>CLIENT-SERVER ARCHITECTURE</li>
+							<li>HTTP, TCP/IP, DNS etc.</li>
+							<li>IP ADDRESS</li>
+							<li>INTERNET SERVICE PROVIDER or ISP</li>
+						</ul>
+					</p>
+				</section>
+				<section> <p><strong>Internet Protocol</strong> is the convention that has been agreed on, which is responsible for the communication and delivering of information between computers.
+					</p>
+					<img src="images/20200925-howInternetWorks/internet-protocol.png">
+				</section>
+				<section>
+					<p>In order to make this communication work we needed this System to be able to recognise each individual computer or server. To do that we gave each computer an <strong>IP address </strong>.</p>
+					<p>Computers big:servers or small:your phone are all represented by an individual number which is called <strong>IP address</strong>. All computers have their individual number so we won’t confuse them.
+					Until today there have been two systems that allows us make this work <strong>IPv4</strong> and <strong>IPv6</strong>.</p>	
+				</section>
+				<section>
+					<img src="images/20200925-howInternetWorks/maxresdefault.jpg">
+				</section>
+				
+				<section>
+				<p>The Domain Name System (DNS) that consists of DNS databases that are stored in DNS servers. It translates domain names to IP addresses.</p>
+				<p>DNS request</p>
+				<img src=images/20200925-howInternetWorks/dns-request.png >
+				</section>
+				<section>
+					<p>A packet is a small about of data sent across a TCP/IP network or the Internet.</p>
+					<p>The benefits are smaller data can travel faster using multiple routes.</p>
+					<p>Sometimes a user can experience a network packet loss, resulting in poor quality data received.</p>
+					<p>Two types of Internet Protocols:</p>
+				</section>
+				<section>
+					<p><strong>1. Transmission Control Protocol (TCP)</strong><br>
+						This is a connection-oriented protocol. A connection between a sender and receiver must be established before data is sent. TCP prioritises reliability of data transfer.</p>
+						<p><strong>2. User Datagram Protocol (UDP)</strong><br>
+						This is a connectionless protocol. It allows a program to send many packets at speed which is useful in online gaming and live broadcasting. UCP prioritises speed of data transfer and neglects incomplete data packets.</p>
+				</section>
+				<!-- <section> -->
+					<section>
+						<h2>HTTP - Hyper Text Transfer Protocol</h2>
+					</section>
+					<section>
+						<img src="images/20200925-howInternetWorks/httpslide1.2.png" alt="http image one">
+					</section>
+					<section>
+						<h3>A sample conversation</h3>
+						<img src="images/20200925-howInternetWorks/httpslide2.png" alt="http image two">
+						<p><small>Source: Wikipedia/Hypertext_Transfer_Protocol</small></p>
+					</section>
+					<section>
+						<h2>HTML - Hypertext Markup Language</h2>
+					</section>
+					<section>
+						<img src="images/20200925-howInternetWorks/htmlslide1.2.png" alt="html image one">
+					</section>
+					<section>
+						<h2>Router</h2>
+					</section>
+					<section>
+						<h3>Networks linked by routers</h3>
+						<img src="images/20200925-howInternetWorks/routerslide1.png" alt="router image one">
+					</section>
+					<section>
+						<img src="images/20200925-howInternetWorks/routerslide2.png" alt="router image two">
+					</section>
+					<section>
+						<h2>Thank you!</h2>
+					</section>
+				<!-- </section> -->
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: true,
+				controls: true,
+				touch: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
